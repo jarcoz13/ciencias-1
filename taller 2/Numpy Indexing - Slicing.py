@@ -1,3 +1,8 @@
+"""
+Jose Alejandro Cortazar Lopez
+Alvaro Alejandro Zarabanda Gutierrez
+"""
+
 import numpy as np
 
 def calcularSlice(bloque):
