@@ -6,7 +6,10 @@ Alvaro Alejandro Zarabanda Gutierrez
 import numpy as np
 
 def calcularSlice(bloque):
-    z, y, x = bloque//9*3, (bloque//3)%3*3, bloque%3*3 
+    #z, y, x = bloque//9*3, (bloque//3)%3*3, bloque%3*3
+    z = (bloque//9)*3
+    y = ((bloque//3)%3)*3
+    x = (bloque%3)*3
     return tuple(slice(i, i+3) for i in (z, y, x))
 
 def cambiarBloques(a,bloque1,bloque2):
