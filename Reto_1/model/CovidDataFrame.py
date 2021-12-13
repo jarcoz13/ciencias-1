@@ -1,12 +1,5 @@
-from datetime import datetime
-from multiprocessing.dummy import dict
-
-from numpy import select
-
 from service.SocrataClient import SocrataClient
-import numpy as np
 import pandas as pd
-
 
 class CovidDataFrame:
 

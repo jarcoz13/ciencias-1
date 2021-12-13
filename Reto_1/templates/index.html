@@ -99,15 +99,19 @@
         <li>Consultar registros por departamento y edad
             <form method="post" action="/">
                 <select name="departamento">
-                    #Pasar el diccionario
-
-
-                    <option value="BOGOTA">Bogota</option>
-                    <option value="ANTIOQUIA" selected>Antioquia</option>
+                    {% for departamento in departamentos %}
+                        <option value="{{ departamento }}">{{ departamento }}</option>
+                    {% endfor %}
                 </select>
                 <label for="edad">Ingrese la edad</label>
-                <input type="text" id="edad2" name="edad2">
+                <input type="text" id="edad" name="edad">
                 <input class="btn btn-primary" type="submit" value="Consultar" name="consultarDepartamentoyEdad">
+                {% if dataDepartamentoEdad != None %}
+                    <div class="container-md" style="height: 300px">
+                        {{ dataDepartamentoEdad | safe }}
+                    </div>
+                {% endif %}
+
             </form>
         </li>
 
@@ -115,11 +119,16 @@
         <li>Consultar registros por ultimo pais de procedencia
             <form method="post" action="/">
                 <select name="pais">
-                    #Pasar el diccionario
-                    <option value="ESPAÑA">España</option>
-                    <option value="ITALIA" selected>Italia</option>
+                    {% for pais in paises %}
+                        <option value="{{ pais }}">{{ pais }}</option>
+                    {% endfor %}
                 </select>
                 <input class="btn btn-primary" type="submit" value="Consultar" name="consultarPais">
+                {% if dataPaises != None %}
+                    <div class="container-md" style="height: 300px">
+                        {{ dataPaises | safe }}
+                    </div>
+                {% endif %}
             </form>
         </li>
 
