@@ -1,0 +1,36 @@
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.container-md {
+    overflow: auto;
+    max-height: 700px;
+}
+
+.title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+    height: 50px;
+    width: 60px;
+}
+
+.parrafo {
+    text-align: center;
+    font-family: "Bodoni MT";
+    font-size: xx-large;
+}
+
+.bi-github {
+    width: 40px;
+    height: 40px;
+}

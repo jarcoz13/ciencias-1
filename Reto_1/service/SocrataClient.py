@@ -18,5 +18,5 @@ class SocrataClient:
 
         # First 2000 results, returned as JSON from API / converted to Python list of
         # dictionaries by sodapy.
-        results = self.client.get("gt2j-8ykr", limit=8000)
+        results = self.client.get("gt2j-8ykr", limit=1000)
         return results
