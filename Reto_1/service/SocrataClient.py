@@ -11,12 +11,12 @@ class SocrataClient:
         # in place of application token, and no username or password:
 
         # Example authenticated client (needed for non-public datasets):
-        # client = Socrata(www.datos.gov.co,
-        #                  MyAppToken,
-        #                  userame="user@example.com",
-        #                  password="AFakePassword")
+
 
         # First 2000 results, returned as JSON from API / converted to Python list of
-        # dictionaries by sodapy.
+        # dictionaries# client = Socrata(www.datos.gov.co,
+        #         #                  MyAppToken,
+        #         #                  userame="user@example.com",
+        #         #                  password="AFakePassword") by sodapy.
         results = self.client.get("gt2j-8ykr", limit=1000)
         return results
